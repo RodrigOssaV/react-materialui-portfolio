@@ -1,49 +1,37 @@
 import React from "react";
 import {
-  Container,
   Grid,
   Typography,
-  Box,
   Card,
   CardContent,
   CardMedia,
-  CardActions,
-  Chip,
+  Box,
+  Container,
 } from "@mui/material";
+
+import ProjectDetail from "./ProjectDetail";
 
 import { projectsData } from "../data";
 
-function StyledGrid({ tags }) {
+function Project({ data }) {
   return (
-    <div>
-      {tags.map((tag) => (
-        <Chip label={tag} variant="outlined" key={tag}></Chip>
-      ))}
-    </div>
-  );
-}
-
-function Project({ title, description, imageUrl, tags }) {
-  return (
-    <Grid item>
-      <Card sx={{ display: "flex" }}>
-        <div>
-          <CardContent>
-            <Typography variant="h5" paragraph>
-              {title}
-            </Typography>
-            <Typography variant="subtitle1" paragraph>
-              {description}
-            </Typography>
-            <CardActions sx={{ display: { xs: "block", sm: "none" } }}>
-              <StyledGrid tags={tags}></StyledGrid>
-            </CardActions>
-          </CardContent>
-          <CardActions sx={{ display: { xs: "none", sm: "block" } }}>
-            <StyledGrid tags={tags}></StyledGrid>
-          </CardActions>
-        </div>
-        <CardMedia image={imageUrl} sx={{ width: 200, display: { xs: "none", sm: "block" } }}></CardMedia>
+    <Grid item xs={4} p={1}>
+      <Card m={1}>
+        <CardMedia
+          component="img"
+          height="280"
+          image={process.env.PUBLIC_URL + data.imageUrl}
+          alt="green iguana"
+        />
+        <CardContent sx={{ height: "100%" }}>
+          <Typography gutterBottom variant="h5" component="div">
+            {data.title}
+          </Typography>
+          <Typography variant="body2" color="text.secondary">
+            {data.subtitle}
+          </Typography>
+        </CardContent>        
+        <ProjectDetail id={data.id}/>
       </Card>
     </Grid>
   );
@@ -55,15 +43,17 @@ function Projects() {
       <Box mt={8} mb={2}>
         <Typography variant="h4">Projects</Typography>
       </Box>
-      <Grid container direction="column" spacing={4}  mb={2}>
-        {projectsData.map((data) => (
-          <Project {...data} key={data.title} />
-        ))}
-      </Grid>
+      <Box mb={2}>
+        <Card>
+          <Grid container columns={{ xs: 4, sm: 8, md: 12 }}>
+            {projectsData.map((data) => (
+              <Project data={data} key={data.id} />
+            ))}
+          </Grid>
+        </Card>
+      </Box>
     </Container>
   );
 }
 
 export default Projects;
-
-

@@ -29,7 +29,7 @@ function App() {
       <HeroSection />
       <About />
       <Experiences />
-      {/* <Projects /> */}
+      <Projects />
       <Footer />
     </ThemeProvider>
   );

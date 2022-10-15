@@ -1,56 +1,125 @@
 const projectsData = [
   {
-    title: "Lorem ipsum dolor sit amet, consectetur adipiscing ",
+    id: 1,
+    title: "Agenda",
+    subtitle: "Proyecto personal.",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco",
-    imageUrl:
-      "https://images.unsplash.com/photo-1557008075-7f2c5efa4cfd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=697&q=80",
+      "Aplicación Web que permite a distintos usuarios almacenar tareas y contactos en una base de datos MySQL.",
     imageAlt: "Project 1 Image",
-    tags: ["React.js", "Material-UI", "Gatsby.js"],
-    /* links: [
-                {
-                icon: GitHubIcon,
-                href: "https://www.github.com",
-                },
-                {
-                icon: OpenInNewIcon,
-                href: "https://www.google.com",
-                },
-            ], */
+    imageUrl: "/nodejs-app-img-1920x1040.JPG",
+    tags: ["Express", "Nodejs", "MySQL", "Bulma CSS"],
+    links: [
+      {
+        icon: "",
+        href: "https://github.com/RodrigOssaV/nodejs-agenda-app",
+      },
+    ],
   },
   {
-    title: "Lorem ipsum dolor sit amet",
+    id: 2,
+    title: "MUNDO App",
+    subtitle: "Proyecto personal.",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco",
+      "Proyecto para agilizar el trabajo en recepción de llamadas en un Call Center. Trabajo personal para facilitar mi trabajo en esa área.",
     imageAlt: "Project 2 Image",
-    imageUrl:
-      "https://images.unsplash.com/photo-1433086966358-54859d0ed716?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=687&q=80",
-    tags: ["GraphQL", "Apollo Client", "Prisma", "Material-UI"],
-    /* links: [
-                {
-                icon: GitHubIcon,
-                href: "https://www.github.com",
-                },
-                {
-                icon: OpenInNewIcon,
-                href: "https://www.google.com",
-                },
-            ], */
+    imageUrl: "/electron-img.JPG",
+    tags: ["Electron", "Bulma CSS"],
+    links: [
+      {
+        icon: "",
+        href: "https://github.com/RodrigOssaV/electron_app",
+      },
+    ],
   },
   {
-    title: "Lorem ipsum dolor ",
+    id: 3,
+    title: "WareSoffan",
+    subtitle: "Proyecto de título.",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco",
+      "Software de inventario y generación de reportes para distribución y repartos de encomiendas. Proyecto de título presentada a la facultad de ingeniería de la Universidad Católica de la Santísima Concepción.",
     imageAlt: "Project 3 Image",
-    imageUrl:
-      "https://images.unsplash.com/photo-1606214174585-fe31582dc6ee?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
-    tags: ["React.js", "Node.js", "PostgreSQL", "Next.js"],
-    /* links: [
-                {
-                icon: OpenInNewIcon,
-                href: "https://www.google.com",
-                },
-            ], */
+    imageUrl: "/waresoffan-img-1920x1040.jpg",
+    tags: [
+      "Angular",
+      "React-Native",
+      "Express",
+      "Sequelize",
+      "MySQL",
+      "Bulma CSS",
+    ],
+    links: [
+      {
+        icon: "",
+        href: "https://github.com/RodrigOssaV/proyecto_titulo",
+      },
+    ],
+  },
+  {
+    id: 4,
+    title: "Tareas WebApp",
+    subtitle: "Proyecto personal.",
+    description: "",
+    imageAlt: "Project 4 Image",
+    imageUrl: "/nodejs-app2-img-1920x1040.JPG",
+    tags: ["Nodejs", "Express", "MySQL", "Bootstrap"],
+    links: [
+      {
+        icon: "",
+        href: "https://github.com/RodrigOssaV/nodejs-app",
+      },
+    ],
+  },
+  {
+    id: 5,
+    title: "Portafolio",
+    subtitle: "Proyecto personal.",
+    description:
+      "Portafolio personal de mis trabajos y habilidades en lo que respecta al desarrollo de software.",
+    imageAlt: "Project 5 Image",
+    imageUrl: "/portfolio-img-1920x1040.JPG",
+    tags: ["React", "Material UI"],
+    links: [
+      {
+        icon: "",
+        href: "https://github.com/RodrigOssaV/react-materialui-portfolio",
+      },
+    ],
+  },
+  {
+    id: 6,
+    title: "COVID Status",
+    subtitle: "Proyecto realizado para el curso Gestión de Datos, UCSC.",
+    description:
+      "Repositorio que tiene relación al avance del Coronavirus mediante un análisis realizado en Python. Toma como referencia la información actual del Coronavirus subida en el repositorio de JHU CSSE.",
+    imageAlt: "Project 6 Image",
+    imageUrl: "/covid-jupyterlab-img-1920x1040.JPG",
+    tags: ["Python"],
+    links: [
+      {
+        name: "personal",
+        href: "https://github.com/RodrigOssaV/COVID-status",
+      },
+      {
+        name: "information",
+        href: "https://github.com/CSSEGISandData/COVID-19",
+      },
+    ],
+  },
+  {
+    id: 7,
+    title: "Django APP",
+    subtitle: "Proyecto personal.",
+    description:
+      "Proyecto de estudio personal desarrollado con Python, utilizando Django como marco de trabajo.",
+    imageUrl:"/django-app-img.JPG",
+    imageAlt: "Project 7 Image",
+    tags: ["Django", "Python", "Bulma CSS"],
+    links: [
+      {
+        icon: "",
+        href: "https://github.com/RodrigOssaV/django-agenda-app",
+      },
+    ],
   },
 ];
 
@@ -72,7 +141,7 @@ const experienceData = [
     title: "Desarrollador Independiente",
     description: "Desarrollador independiente.",
     year_started: 2019,
-    year_end: 2022,
+    year_end: "Actual",
   },
 ];
 
@@ -94,7 +163,7 @@ const skillList = [
   },
   {
     title: "React",
-    value: 45,
+    value: 55,
     imageUrl: "",
   },
   {
@@ -115,7 +184,7 @@ const skillList = [
   },
   {
     title: "Material UI",
-    value: 45,
+    value: 55,
     imgURL: "",
   },
   {
@@ -138,24 +207,32 @@ const aboutHeroSection = [
     title: "about",
     about: "Hola! Mi nombre es Rodrigo Ossa Villalobos.",
     description: "Desarrollo Websites, aplicaciones Web y móviles.",
-    location: "Concepción, Chile."
-  }
-]
+    location: "Concepción, Chile.",
+  },
+];
 
 const navigationLinks = [
   { name: "About", href: "#about" },
-  { name: "Experience", href: "#experience"},
+  { name: "Experience", href: "#experience" },
   { name: "Projects", href: "#projects" },
   { name: "Resume", href: "" },
 ];
 
 const lenguageSkill = [
-  { title: "TypeScript", value: 70},
-  { title: "JavaScript", value: 75},
-  { title: "Python", value: 40},
-  { title: "HTML", value: 60},
-  { title: "CSS", value: 45},
-  { title: "Inglés", value: 60},
-]
+  { title: "TypeScript", value: 70 },
+  { title: "JavaScript", value: 75 },
+  { title: "Python", value: 40 },
+  { title: "HTML", value: 60 },
+  { title: "CSS", value: 45 },
+  { title: "Inglés", value: 60 },
+];
 
-export { projectsData, experienceData, skillList, aboutDescription, navigationLinks, aboutHeroSection, lenguageSkill };
+export {
+  projectsData,
+  experienceData,
+  skillList,
+  aboutDescription,
+  navigationLinks,
+  aboutHeroSection,
+  lenguageSkill,
+};
