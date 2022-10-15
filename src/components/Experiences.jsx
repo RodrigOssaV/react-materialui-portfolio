@@ -24,7 +24,7 @@ function Experiences() {
   return (
     <Container maxWidth="md" id="experience">
       <Box mt={8} mb={2}>
-        <Typography variant="h4">Experience</Typography>
+        <Typography variant="h4">Experiencia</Typography>
       </Box>
       <Box mb={2}>
         {experienceData.map((data) => (

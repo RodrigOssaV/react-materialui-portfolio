@@ -41,7 +41,7 @@ function Projects() {
   return (
     <Container maxWidth="md" id="projects">
       <Box mt={8} mb={2}>
-        <Typography variant="h4">Projects</Typography>
+        <Typography variant="h4">Proyectos</Typography>
       </Box>
       <Box mb={2}>
         <Card>

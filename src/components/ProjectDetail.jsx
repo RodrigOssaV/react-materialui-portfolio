@@ -97,7 +97,7 @@ function ProjectDetail({ id }) {
   return (
     <div>
       <Button variant="text" size="small" onClick={handleClickOpen}>
-        See more
+        Ver más
       </Button>
 
       {filtered.map((project) => (

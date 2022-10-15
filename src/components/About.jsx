@@ -103,7 +103,7 @@ function About() {
     return (
         <Container maxWidth="md" id="about">
         <Box mt={6} mb={1}>
-            <Typography variant="h4">About</Typography>
+            <Typography variant="h4">Información</Typography>
         </Box>
         <Box sx={{ flexGrow: 1 }}>
             <Card>

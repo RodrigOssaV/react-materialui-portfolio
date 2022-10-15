@@ -212,10 +212,10 @@ const aboutHeroSection = [
 ];
 
 const navigationLinks = [
-  { name: "About", href: "#about" },
-  { name: "Experience", href: "#experience" },
-  { name: "Projects", href: "#projects" },
-  { name: "Resume", href: "" },
+  { name: "Información", href: "#about" },
+  { name: "Experiencia", href: "#experience" },
+  { name: "Proyectos", href: "#projects" },
+  { name: "Resumen", href: "/resumen_rodrigo-cv.pdf" },
 ];
 
 const lenguageSkill = [
@@ -225,6 +225,7 @@ const lenguageSkill = [
   { title: "HTML", value: 60 },
   { title: "CSS", value: 45 },
   { title: "Inglés", value: 60 },
+  { title: "GitHub", value: 40 },
 ];
 
 export {
